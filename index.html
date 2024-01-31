@@ -1,9 +1,100 @@
 <html lang="en">
 
+<!--nav bar-->
 <header>
-
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="./index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<nav>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="https://github.com/GoudyMT" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a></li>
+    </ul>
+</nav>
 </header>
+
+<!--page body-->
+<body>
+    <div class="container">
+        <div class="intro-section">
+            <div class="summary">
+                <h1>Max Goudy</h1>
+                <p>Welcome to my portfolio! I'm an aspiring Full Stack Developer, diligently working my way through Codecademy's Full Stack Engineering course,
+                    while also pursuing a Computer Science degree from Southern New Hampshire University. Since enlisting in the United States Navy in 2017, 
+                    I've developed a disciplined, detail-oriented approach to problem-solving and a strong commitment to teamwork and excellence.
+                    <br>
+                    <br>
+                    My journey in the tech world is fueled by a passion for creating seamless, user-friendly digital experiences and a continuous pursuit
+                    of knowledge and innovation. Here, you'll find a showcase of my projects, a reflection of my technical skills, and a glimpse into my
+                    journey of blending the analytical rigor of the military with the dynamic, ever-evolving landscape of software development.
+                    <br>
+                    <br>
+                    Whether you're a potential employer, a fellow developer, or just dropping by, I'm glad you're here and I hope you enjoy exploring my work!</p>
+            </div>
+            <div class="image-container">
+                <img src="./images/me.JPG" alt="Max Goudy">
+            </div>
+    </div>
+    <div id="projectCarousel" class="carousel">
+        <button id="prevButton" class="carousel-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="projects-container">
+            <div class="project">
+                <img src="./images/QuoteGenerator.JPG" alt="Project 1">
+                <div class="project-info">
+                    <h3>Message Generator</h3>
+                    <p>My first public project with the help of codecademy. Built to test my skill in impliment javascript into HTML.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            
+        </div>
+        <button id="nextButton" class="carousel-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+<script src="./index.js"></script>
+</body>
+
+<!--page footer-->
+<footer>
+    <div class="footer-content">
+        <h3>Max Goudy</h3>
+        <p>Consider. Accept. Start.</p>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="https://github.com/GoudyMT" target="_blank" rel="noopener noreferrer" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a></li>
+            <li><a href="https://instagram.com/maxgoudy" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Max Goudy. All Rights Reserved.</p>
+    </div>
+</footer>
 
 
 </html>
