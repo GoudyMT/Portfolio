@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link rel="stylesheet" href="./index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Max Goudy Portfolio</title>
 <nav>
     <div class="hamburger">
         <div class="line"></div>
@@ -44,32 +45,32 @@
             <div class="image-container">
                 <img src="./images/me.JPG" alt="Max Goudy">
             </div>
-    </div>
-    <div id="projectCarousel" class="carousel">
-        <button id="prevButton" class="carousel-btn prev-btn">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-
-        <div class="projects-container">
-            <div class="project">
-                <img src="./images/QuoteGenerator.JPG" alt="Project 1">
-                <div class="project-info">
-                    <h3>Message Generator</h3>
-                    <p>My first public project with the help of codecademy. Built to test my skill in impliment javascript into HTML.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
+        </div>
+        <div id="projectCarousel" class="carousel">
+            <button id="prevButton" class="carousel-btn prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="projects-container">
+                <div class="project"><a href="https://goudymt.github.io/Message-Generator/" target="_blank" >
+                    <img src="./images/QuoteGenerator.JPG" alt="Project 1"></a>
+                    <div class="project-info">
+                        <h3>Message Generator</h3>
+                        <p>My first public project with the help of codecademy. Built to test my skill in implimenting javascript into HTML.</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
             <!-- Repeat for other projects -->
             
+            </div>
+            <button id="nextButton" class="carousel-btn next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
-        <button id="nextButton" class="carousel-btn next-btn">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
+    </div> 
 <script src="./index.js"></script>
 </body>
 

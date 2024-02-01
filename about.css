@@ -1,0 +1,49 @@
+.journey {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.intro-text {
+    padding-bottom: 30px;
+    overflow: hidden;
+    max-height: 100px; /* Adjust as needed */
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.full-text {
+    display: none;
+}
+
+.read-more {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px; /* Adjusted for better positioning */
+    right: 10px; /* Adjusted for better positioning */
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for rotating */
+}
+
+.journey.expanded .read-more {
+    transform: rotate(180deg);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .intro-text {
+        max-height: none; /* Remove max height restriction for smaller screens */
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .read-more {
+        font-size: 20px; /* Smaller icon size for smaller screens */
+        bottom: 5px; /* Adjusted for better positioning */
+        right: 5px; /* Adjusted for better positioning */
+    }
+
+    /* If you have padding or margins that are too large for mobile, reduce them here */
+    .journey {
+        padding: 15px; /* Adjust as needed for smaller screens */
+    }
+}
