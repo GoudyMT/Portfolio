@@ -1,0 +1,112 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.project-title {
+    font-size: 18px;
+}
+
+.summary, .technologies {
+    font-size: 16px;
+}
+
+.expand-btn {
+    background-color:#333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+}
+
+.expand-btn:hover {
+    background-color: #5d615d;
+}
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.technologies li{
+    padding: 5px 15px;
+    margin: 5 3px;
+    border-radius: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em; 
+    font-weight: 700;
+}
+
+.details {
+    display: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.details {
+    display: none;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #ccc; /* Separates details from the summary */
+}
+
+.details h4 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.project-screenshot {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.details ul {
+    text-align: left;
+}
+
+.details pre {
+    background-color: #f4f4f4;
+    border-left: 3px solid #ccc;
+    padding: 5px;
+    overflow: auto;
+}
+
+.details a {
+    color: #04AA6D;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}

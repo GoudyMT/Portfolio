@@ -1,0 +1,20 @@
+.contact-info {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #04AA6D;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

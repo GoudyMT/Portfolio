@@ -1,32 +1,65 @@
+/* about section */
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
 .journey {
     margin-bottom: 20px;
     position: relative;
+    transition: background-color 0.3s ease;
 }
 
-.intro-text {
-    padding-bottom: 30px;
-    overflow: hidden;
-    max-height: 100px; /* Adjust as needed */
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+.journey:hover {
+    background-color: #f4f4f4;
+    border-radius: 10px;
 }
 
-.full-text {
-    display: none;
-}
-
-.read-more {
-    cursor: pointer;
+.journey .read-more {
     position: absolute;
-    bottom: 10px; /* Adjusted for better positioning */
-    right: 10px; /* Adjusted for better positioning */
-    font-size: 24px;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for rotating */
+    bottom: 10px; 
+    right: 10px; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .journey.expanded .read-more {
     transform: rotate(180deg);
 }
+
+.journey h2 {
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.intro-text {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    max-height: 100px;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    cursor: default;
+}
+
+.full-text {
+    display: none;
+    padding: 10px;
+    cursor: default;
+}
+
+.read-more {
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for rotating */
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -45,5 +78,77 @@
     /* If you have padding or margins that are too large for mobile, reduce them here */
     .journey {
         padding: 15px; /* Adjust as needed for smaller screens */
+    }
+}
+
+/* book section */
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adapts the number of columns to the container's width */
+    gap: 10px;
+    max-height: 500px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 10px;
+    /* Add a background or borders if desired */
+}
+
+.book {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for interaction */
+}
+
+.book:hover {
+    transform: translateY(-2px); /* Slight raise effect on hover */
+}
+
+.book-title {
+    margin: 0;
+    font-size: 1em;
+    white-space: wrap;
+    overflow: wrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    align-items: center;
+}
+
+.book-description {
+    display: none;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.book.expanded .book-description {
+    display: block; /* Show description on click */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Fewer columns with less width on smaller screens */
+    }
+
+    .book {
+        padding: 8px;
+    }
+
+    .book-title {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-list {
+        grid-template-columns: 1fr; 
+        max-height: 300px; 
+    }
+
+    .book {
+        padding: 12px;
     }
 }
