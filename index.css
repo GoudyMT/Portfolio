@@ -147,7 +147,7 @@ body {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
     margin-top: 20px;
 }
 
@@ -171,14 +171,14 @@ body {
 }
 
 .project img {
-    width: 400px; 
+    max-width: 400px; 
     height: auto;
     margin-bottom: 0;
 }
 
 .project-info {
-    margin-top: 10px;
-    width: 400px;
+    margin: 10px;
+    max-width: 400px;
 }
 
 .project-info h3{
@@ -259,53 +259,49 @@ body {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+
     .project {
-        
         flex: 0 0 100%;
-        
         font-size: 0.9em; 
-        padding: 15px;
+        padding: 15px; 
     }
 
     .carousel-btn {
-        
         width: 30px; 
         height: 30px; 
         font-size: 18px; 
         top: 50%; 
-        transform: translateY(-50%);
+        transform: translateY(-50%); 
     }
 
-    /* If you have text or other elements inside .project, adjust them here */
     .project h3 {
-        font-size: 1.2em; /* Smaller heading */
+        font-size: 1.2em; 
     }
 
     .project p {
-        font-size: 0.8em; /* Smaller paragraph text */
+        font-size: 0.8em;
     }
 }
 
 @media (max-width: 480px) {
-    /* Styles for very small screens like mobile phones */
+
     .carousel-btn {
-        /* Further reduce the size if necessary */
         width: 25px;
         height: 25px;
         font-size: 16px;
     }
 
     .project {
-        padding: 10px; /* Less padding for smaller screens */
+        padding: 5px;
+        width: 70%;
     }
 
-    /* Adjust font sizes for very small screens */
     .project h3 {
-        font-size: 1em; /* Even smaller heading */
+        font-size: 1em;
     }
 
     .project p {
-        font-size: 0.7em; /* Even smaller paragraph text */
+        font-size: 0.7em; 
     }
 }
 
